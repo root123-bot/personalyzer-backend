@@ -197,10 +197,8 @@ EMAIL_HOST_PASSWORD = 'opkstfrgmmlsgrhk'  # this is app password for my gmail ht
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, 'static')
-]
+
 
 AUTH_USER_MODEL = 'Register.CustomUser'
