@@ -51,12 +51,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt.token_blacklist',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -202,5 +204,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')  # there is not 'static' folder in BaseDir lazima ilete error..
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # this will copy all static files to this folder on running 'manage.py collectstatic'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 AUTH_USER_MODEL = 'Register.CustomUser'
