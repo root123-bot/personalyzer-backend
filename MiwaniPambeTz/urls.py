@@ -30,14 +30,16 @@ urlpatterns = [
     url(r'^customer/', include(customer_urls)),
     url(r'^register/', include(register_urls)),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 '''
 With this you can serve the static media from Django when DEBUG = True (when you run on local computer) but you can let your web server configuration serve static media when you go to production and DEBUG = False
 Sijui kama kuna umuhimu wa website yetu hii ya ku-disable mtu asione images... Koz ujue sisi tuna-frontend ko ni muhimu kwake ku-access images/static files.
+
+if settings.DEBUT:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 '''
 
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
