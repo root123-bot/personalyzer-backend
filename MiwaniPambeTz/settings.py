@@ -198,7 +198,7 @@ EMAIL_HOST_PASSWORD = 'opkstfrgmmlsgrhk'  # this is app password for my gmail ht
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'static')  # Lets test with project.. instead of base_dir
 ]
 
