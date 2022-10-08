@@ -1,0 +1,3 @@
+>>> git add .
+>>> git commit -m '8th commit'      // this 8th commit is last commit so for new one you should change it to other starting from 9th..
+>>> git push -u origin master

@@ -183,6 +183,7 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     'https://personalyzer-frontend.vercel.app',
+    'localhost:3000'
 ]
 
 
