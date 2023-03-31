@@ -217,4 +217,6 @@ AUTH_USER_MODEL = 'Register.CustomUser'
     AFTER HOSTING NIMEHANGAIKA SANA ... BUT MUNGU NI MWEMA .. HII LINK IMENISAIDIA NA KILA KITU KIPO SAWA SASA UPANDE WANGU...
     HII LINK NI MUHIMU ON HOW TO SERVE STATIC FILES IN YOUR HOSTING ...NIMEONA KUNA MODULE KAMA 'whitenoise' INABIDI UI-INSTALL NA U-CONFIGURE
     HAPA KWENYE settings.py .. Hii link ni muhimu sana.. https://learndjango.com/tutorials/django-static-files
+    Hii link sasa hivi haifanyi kazi ila hapa cha kufanya ni ku-download hiyo whitenoise package then ukishadownload inabidi add setting zote za 
+    'whitenoise' zilizopo kwenye setting.py ya project hii just simple tu...
 '''
